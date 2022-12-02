@@ -1,0 +1,94 @@
+Content-type: text/plain
+
+#
+# File created on 2022-11-11 01:18:51 EST
+# Refresh Date: 2018-06
+#
+# U.S. Geological Survey
+#
+# This file contains selected WaterUse data 
+#
+# The data you have secured from the USGS NWISWeb database may include data that have 
+# not received Director's approval and as such are provisional and subject to revision. 
+# The data are released on the condition that neither the USGS nor the United States 
+# Government may be held liable for any damages resulting from its authorized or 
+# unauthorized use.
+#
+#  * References to sources of water-use data can be found here. - https://water.usgs.gov/watuse
+#
+#  Search Criteria:
+#  Year(s)          - 2015
+#  Area             - County
+#  County Codes(s)  - ALL
+#  County Name(s)   - --ALL Counties--
+#  Category Code(s) - IT
+#  Category Name(s) - Irrigation,  Total
+#
+#  Columns:
+#  state_cd    - State Code
+#  state_name  - State Name
+#  county_cd   - County Code
+#  county_nm   - County Name
+#  year        - Year
+#
+#  The following categories are included: 
+#  Irrigation, Total self-supplied groundwater withdrawals, fresh, in Mgal/d 
+#  Irrigation, Total self-supplied groundwater withdrawals, saline, in Mgal/d 
+#  Irrigation, Total total self-supplied withdrawals, groundwater, in Mgal/d 
+#  Irrigation, Total self-supplied surface-water withdrawals, fresh, in Mgal/d 
+#  Irrigation, Total self-supplied surface-water withdrawals, saline, in Mgal/d 
+#  Irrigation, Total total self-supplied withdrawals, surface water, in Mgal/d 
+#  Irrigation, Total total self-supplied withdrawals, fresh, in Mgal/d 
+#  Irrigation, Total total self-supplied withdrawals, saline, in Mgal/d 
+#  Irrigation, Total total self-supplied withdrawals, in Mgal/d 
+#  Irrigation, Total consumptive use, fresh, in Mgal/d 
+#  Irrigation, Total consumptive use, saline, in Mgal/d 
+#  Irrigation, Total total consumptive use, in Mgal/d 
+#  Irrigation, Total conveyance loss, in Mgal/d 
+#  Irrigation, Total sprinkler irrigation, in thousand acres 
+#  Irrigation, Total microirrigation, in thousand acres 
+#  Irrigation, Total surface irrigation, in thousand acres 
+#  Irrigation, Total total irrigation, in thousand acres 
+#  Irrigation, Total reclaimed wastewater, in Mgal/d 
+#
+state_cd	state_name	county_cd	county_nm	year	Irrigation, Total self-supplied groundwater withdrawals, fresh, in Mgal/d	Irrigation, Total self-supplied groundwater withdrawals, saline, in Mgal/d	Irrigation, Total total self-supplied withdrawals, groundwater, in Mgal/d	Irrigation, Total self-supplied surface-water withdrawals, fresh, in Mgal/d	Irrigation, Total self-supplied surface-water withdrawals, saline, in Mgal/d	Irrigation, Total total self-supplied withdrawals, surface water, in Mgal/d	Irrigation, Total total self-supplied withdrawals, fresh, in Mgal/d	Irrigation, Total total self-supplied withdrawals, saline, in Mgal/d	Irrigation, Total total self-supplied withdrawals, in Mgal/d	Irrigation, Total consumptive use, fresh, in Mgal/d	Irrigation, Total consumptive use, saline, in Mgal/d	Irrigation, Total total consumptive use, in Mgal/d	Irrigation, Total conveyance loss, in Mgal/d	Irrigation, Total sprinkler irrigation, in thousand acres	Irrigation, Total microirrigation, in thousand acres	Irrigation, Total surface irrigation, in thousand acres	Irrigation, Total total irrigation, in thousand acres	Irrigation, Total reclaimed wastewater, in Mgal/d
+2s	40s	3s	40s	4s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s
+53	Washington	001	Adams County	2015	75.15	-	75.15	80.20	-	80.20	155.35	-	155.35	122.46	-	122.46	-	102.43	4.20	22.60	129.23	0.00
+53	Washington	003	Asotin County	2015	0.18	-	0.18	0.21	-	0.21	0.39	-	0.39	0.31	-	0.31	-	0.60	0.01	0.00	0.61	0.00
+53	Washington	005	Benton County	2015	42.14	-	42.14	205.18	-	205.18	247.32	-	247.32	196.71	-	196.71	-	150.55	6.05	14.30	170.90	0.00
+53	Washington	007	Chelan County	2015	1.95	-	1.95	24.47	-	24.47	26.42	-	26.42	21.12	-	21.12	-	16.86	0.10	0.00	16.96	0.00
+53	Washington	009	Clallam County	2015	0.91	-	0.91	5.56	-	5.56	6.47	-	6.47	5.20	-	5.20	-	4.11	0.15	0.00	4.26	0.00
+53	Washington	011	Clark County	2015	5.08	-	5.08	0.65	-	0.65	5.73	-	5.73	4.62	-	4.62	-	4.02	0.15	0.00	4.17	0.00
+53	Washington	013	Columbia County	2015	0.72	-	0.72	3.79	-	3.79	4.51	-	4.51	3.62	-	3.62	-	3.93	0.10	0.00	4.03	0.00
+53	Washington	015	Cowlitz County	2015	1.32	-	1.32	1.85	-	1.85	3.17	-	3.17	2.55	-	2.55	-	2.43	0.20	0.00	2.63	0.00
+53	Washington	017	Douglas County	2015	4.24	-	4.24	16.69	-	16.69	20.93	-	20.93	16.86	-	16.86	-	17.15	1.00	0.00	18.15	0.00
+53	Washington	019	Ferry County	2015	0.62	-	0.62	1.79	-	1.79	2.41	-	2.41	1.95	-	1.95	-	2.20	0.15	0.00	2.35	0.00
+53	Washington	021	Franklin County	2015	90.50	-	90.50	271.46	-	271.46	361.96	-	361.96	288.84	-	288.84	-	167.41	11.55	15.90	194.86	0.00
+53	Washington	023	Garfield County	2015	0.05	-	0.05	0.50	-	0.50	0.55	-	0.55	0.45	-	0.45	-	0.77	0.03	0.00	0.80	0.00
+53	Washington	025	Grant County	2015	209.92	-	209.92	622.50	-	622.50	832.42	-	832.42	652.99	-	652.99	-	310.11	20.00	85.70	415.81	0.00
+53	Washington	027	Grays Harbor County	2015	4.52	-	4.52	2.43	-	2.43	6.95	-	6.95	5.59	-	5.59	-	6.24	0.25	0.00	6.49	0.00
+53	Washington	029	Island County	2015	1.13	-	1.13	0.25	-	0.25	1.38	-	1.38	1.10	-	1.10	-	1.69	0.05	0.00	1.74	0.00
+53	Washington	031	Jefferson County	2015	0.63	-	0.63	0.26	-	0.26	0.89	-	0.89	0.71	-	0.71	-	0.57	0.03	0.00	0.60	0.00
+53	Washington	033	King County	2015	3.87	-	3.87	4.16	-	4.16	8.03	-	8.03	6.43	-	6.43	-	7.29	0.15	0.00	7.44	0.00
+53	Washington	035	Kitsap County	2015	1.42	-	1.42	0.67	-	0.67	2.09	-	2.09	1.67	-	1.67	-	1.40	0.02	0.00	1.42	0.00
+53	Washington	037	Kittitas County	2015	23.61	-	23.61	123.48	-	123.48	147.09	-	147.09	111.57	-	111.57	-	29.77	2.95	28.80	61.52	0.00
+53	Washington	039	Klickitat County	2015	16.81	-	16.81	6.07	-	6.07	22.88	-	22.88	18.28	-	18.28	-	17.54	1.15	1.30	19.99	0.00
+53	Washington	041	Lewis County	2015	3.51	-	3.51	4.22	-	4.22	7.73	-	7.73	6.26	-	6.26	-	7.15	0.50	0.00	7.65	0.00
+53	Washington	043	Lincoln County	2015	12.36	-	12.36	3.08	-	3.08	15.44	-	15.44	12.44	-	12.44	-	23.73	1.60	0.00	25.33	0.00
+53	Washington	045	Mason County	2015	0.82	-	0.82	0.25	-	0.25	1.07	-	1.07	0.86	-	0.86	-	0.87	0.05	0.00	0.92	0.00
+53	Washington	047	Okanogan County	2015	21.30	-	21.30	27.63	-	27.63	48.93	-	48.93	39.41	-	39.41	-	47.80	3.20	0.45	51.45	0.00
+53	Washington	049	Pacific County	2015	0.79	-	0.79	1.44	-	1.44	2.23	-	2.23	1.80	-	1.80	-	0.10	0.14	2.13	2.37	0.00
+53	Washington	051	Pend Oreille County	2015	0.16	-	0.16	0.16	-	0.16	0.32	-	0.32	0.26	-	0.26	-	0.70	0.02	0.00	0.72	0.00
+53	Washington	053	Pierce County	2015	4.21	-	4.21	1.58	-	1.58	5.79	-	5.79	4.67	-	4.67	-	4.13	0.44	0.00	4.57	0.00
+53	Washington	055	San Juan County	2015	0.02	-	0.02	0.09	-	0.09	0.11	-	0.11	0.09	-	0.09	-	0.43	0.01	0.00	0.44	0.00
+53	Washington	057	Skagit County	2015	13.82	-	13.82	4.62	-	4.62	18.44	-	18.44	14.56	-	14.56	-	18.56	0.90	0.00	19.46	0.00
+53	Washington	059	Skamania County	2015	0.15	-	0.15	0.36	-	0.36	0.51	-	0.51	0.42	-	0.42	-	0.45	0.02	0.00	0.47	0.00
+53	Washington	061	Snohomish County	2015	2.37	-	2.37	2.17	-	2.17	4.54	-	4.54	3.66	-	3.66	-	5.97	0.31	0.00	6.28	0.00
+53	Washington	063	Spokane County	2015	7.59	-	7.59	1.05	-	1.05	8.64	-	8.64	6.96	-	6.96	-	10.72	0.60	0.00	11.32	0.00
+53	Washington	065	Stevens County	2015	2.41	-	2.41	4.08	-	4.08	6.49	-	6.49	5.25	-	5.25	-	6.05	0.59	0.00	6.64	0.00
+53	Washington	067	Thurston County	2015	4.96	-	4.96	1.16	-	1.16	6.12	-	6.12	4.92	-	4.92	-	5.52	0.41	0.00	5.93	0.00
+53	Washington	069	Wahkiakum County	2015	0.04	-	0.04	0.06	-	0.06	0.10	-	0.10	0.08	-	0.08	-	0.08	0.00	0.00	0.08	0.00
+53	Washington	071	Walla Walla County	2015	43.98	-	43.98	58.05	-	58.05	102.03	-	102.03	83.07	-	83.07	-	80.89	6.10	0.00	86.99	0.00
+53	Washington	073	Whatcom County	2015	26.69	-	26.69	4.28	-	4.28	30.97	-	30.97	25.16	-	25.16	-	36.09	1.91	0.00	38.00	0.00
+53	Washington	075	Whitman County	2015	0.98	-	0.98	1.26	-	1.26	2.24	-	2.24	1.80	-	1.80	-	4.05	0.42	0.00	4.47	0.00
+53	Washington	077	Yakima County	2015	88.61	-	88.61	315.93	-	315.93	404.54	-	404.54	316.11	-	316.11	-	155.83	10.85	51.85	218.53	0.00
