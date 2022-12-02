@@ -1,0 +1,91 @@
+Content-type: text/plain
+
+#
+# File created on 2022-12-02 17:25:00 EST
+# Refresh Date: 2018-06
+#
+# U.S. Geological Survey
+#
+# This file contains selected WaterUse data 
+#
+# The data you have secured from the USGS NWISWeb database may include data that have 
+# not received Director's approval and as such are provisional and subject to revision. 
+# The data are released on the condition that neither the USGS nor the United States 
+# Government may be held liable for any damages resulting from its authorized or 
+# unauthorized use.
+#
+#  * References to sources of water-use data can be found here. - https://water.usgs.gov/watuse
+#
+#  Search Criteria:
+#  Year(s)          - 2015
+#  Area             - County
+#  County Codes(s)  - ALL
+#  County Name(s)   - --ALL Counties--
+#  Category Code(s) - IT
+#  Category Name(s) - Irrigation,  Total
+#
+#  Columns:
+#  state_cd    - State Code
+#  state_name  - State Name
+#  county_cd   - County Code
+#  county_nm   - County Name
+#  year        - Year
+#
+#  The following categories are included: 
+#  Irrigation, Total self-supplied groundwater withdrawals, fresh, in Mgal/d 
+#  Irrigation, Total self-supplied groundwater withdrawals, saline, in Mgal/d 
+#  Irrigation, Total total self-supplied withdrawals, groundwater, in Mgal/d 
+#  Irrigation, Total self-supplied surface-water withdrawals, fresh, in Mgal/d 
+#  Irrigation, Total self-supplied surface-water withdrawals, saline, in Mgal/d 
+#  Irrigation, Total total self-supplied withdrawals, surface water, in Mgal/d 
+#  Irrigation, Total total self-supplied withdrawals, fresh, in Mgal/d 
+#  Irrigation, Total total self-supplied withdrawals, saline, in Mgal/d 
+#  Irrigation, Total total self-supplied withdrawals, in Mgal/d 
+#  Irrigation, Total consumptive use, fresh, in Mgal/d 
+#  Irrigation, Total consumptive use, saline, in Mgal/d 
+#  Irrigation, Total total consumptive use, in Mgal/d 
+#  Irrigation, Total conveyance loss, in Mgal/d 
+#  Irrigation, Total sprinkler irrigation, in thousand acres 
+#  Irrigation, Total microirrigation, in thousand acres 
+#  Irrigation, Total surface irrigation, in thousand acres 
+#  Irrigation, Total total irrigation, in thousand acres 
+#  Irrigation, Total reclaimed wastewater, in Mgal/d 
+#
+state_cd	state_name	county_cd	county_nm	year	Irrigation, Total self-supplied groundwater withdrawals, fresh, in Mgal/d	Irrigation, Total self-supplied groundwater withdrawals, saline, in Mgal/d	Irrigation, Total total self-supplied withdrawals, groundwater, in Mgal/d	Irrigation, Total self-supplied surface-water withdrawals, fresh, in Mgal/d	Irrigation, Total self-supplied surface-water withdrawals, saline, in Mgal/d	Irrigation, Total total self-supplied withdrawals, surface water, in Mgal/d	Irrigation, Total total self-supplied withdrawals, fresh, in Mgal/d	Irrigation, Total total self-supplied withdrawals, saline, in Mgal/d	Irrigation, Total total self-supplied withdrawals, in Mgal/d	Irrigation, Total consumptive use, fresh, in Mgal/d	Irrigation, Total consumptive use, saline, in Mgal/d	Irrigation, Total total consumptive use, in Mgal/d	Irrigation, Total conveyance loss, in Mgal/d	Irrigation, Total sprinkler irrigation, in thousand acres	Irrigation, Total microirrigation, in thousand acres	Irrigation, Total surface irrigation, in thousand acres	Irrigation, Total total irrigation, in thousand acres	Irrigation, Total reclaimed wastewater, in Mgal/d
+2s	40s	3s	40s	4s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s	16s
+41	Oregon	001	Baker County	2015	47.37	-	47.37	205.75	-	205.75	253.12	-	253.12	164.19	-	164.19	-	8.59	3.86	64.92	77.37	-
+41	Oregon	003	Benton County	2015	18.21	-	18.21	58.51	-	58.51	76.72	-	76.72	59.38	-	59.38	-	50.71	0.52	0.00	51.23	-
+41	Oregon	005	Clackamas County	2015	55.73	-	55.73	44.62	-	44.62	100.35	-	100.35	74.33	-	74.33	-	38.63	1.15	0.00	39.78	-
+41	Oregon	007	Clatsop County	2015	0.03	-	0.03	0.67	-	0.67	0.70	-	0.70	0.49	-	0.49	-	0.48	0.00	0.03	0.51	-
+41	Oregon	009	Columbia County	2015	0.42	-	0.42	4.08	-	4.08	4.50	-	4.50	3.44	-	3.44	-	3.47	0.00	0.00	3.47	-
+41	Oregon	011	Coos County	2015	1.85	-	1.85	16.84	-	16.84	18.69	-	18.69	13.33	-	13.33	-	8.57	0.00	0.41	8.98	-
+41	Oregon	013	Crook County	2015	12.56	-	12.56	128.74	-	128.74	141.30	-	141.30	100.35	-	100.35	-	33.68	0.00	12.41	46.09	-
+41	Oregon	015	Curry County	2015	0.57	-	0.57	6.48	-	6.48	7.05	-	7.05	4.93	-	4.93	-	2.33	0.00	0.02	2.35	-
+41	Oregon	017	Deschutes County	2015	9.37	-	9.37	60.98	-	60.98	70.35	-	70.35	44.09	-	44.09	-	16.29	0.45	7.49	24.23	-
+41	Oregon	019	Douglas County	2015	1.30	-	1.30	73.51	-	73.51	74.81	-	74.81	44.81	-	44.81	-	26.55	0.58	1.73	28.86	-
+41	Oregon	021	Gilliam County	2015	19.97	-	19.97	6.37	-	6.37	26.34	-	26.34	19.37	-	19.37	-	10.41	0.00	2.28	12.69	-
+41	Oregon	023	Grant County	2015	1.38	-	1.38	36.27	-	36.27	37.65	-	37.65	22.99	-	22.99	-	6.27	0.00	6.24	12.51	-
+41	Oregon	025	Harney County	2015	148.64	-	148.64	269.63	-	269.63	418.27	-	418.27	258.72	-	258.72	-	42.71	1.48	103.05	147.24	-
+41	Oregon	027	Hood River County	2015	0.55	-	0.55	49.15	-	49.15	49.70	-	49.70	37.80	-	37.80	-	18.30	0.96	0.00	19.26	-
+41	Oregon	029	Jackson County	2015	3.96	-	3.96	329.58	-	329.58	333.54	-	333.54	175.62	-	175.62	-	49.38	1.69	33.90	84.97	-
+41	Oregon	031	Jefferson County	2015	3.58	-	3.58	124.26	-	124.26	127.84	-	127.84	98.82	-	98.82	-	47.20	2.94	8.83	58.97	-
+41	Oregon	033	Josephine County	2015	4.36	-	4.36	34.66	-	34.66	39.02	-	39.02	30.20	-	30.20	-	9.12	0.15	5.77	15.04	-
+41	Oregon	035	Klamath County	2015	143.81	-	143.81	512.52	-	512.52	656.33	-	656.33	418.62	-	418.62	-	190.15	4.75	42.71	237.61	-
+41	Oregon	037	Lake County	2015	88.72	-	88.72	236.95	-	236.95	325.67	-	325.67	185.68	-	185.68	-	70.31	0.00	39.50	109.81	-
+41	Oregon	039	Lane County	2015	30.10	-	30.10	46.55	-	46.55	76.65	-	76.65	59.34	-	59.34	-	43.58	0.86	0.00	44.44	-
+41	Oregon	041	Lincoln County	2015	0.05	-	0.05	1.96	-	1.96	2.01	-	2.01	1.56	-	1.56	-	1.44	0.00	0.00	1.44	-
+41	Oregon	043	Linn County	2015	43.96	-	43.96	50.36	-	50.36	94.32	-	94.32	72.92	-	72.92	-	57.86	1.79	0.00	59.65	-
+41	Oregon	045	Malheur County	2015	60.41	-	60.41	598.78	-	598.78	659.19	-	659.19	406.52	-	406.52	-	28.46	22.68	137.96	189.10	-
+41	Oregon	047	Marion County	2015	162.47	-	162.47	147.78	-	147.78	310.25	-	310.25	239.40	-	239.40	-	156.18	8.16	0.00	164.34	-
+41	Oregon	049	Morrow County	2015	89.15	-	89.15	117.11	-	117.11	206.26	-	206.26	159.46	-	159.46	-	53.38	14.25	5.11	72.74	-
+41	Oregon	051	Multnomah County	2015	11.48	-	11.48	15.80	-	15.80	27.28	-	27.28	21.10	-	21.10	-	9.78	0.09	0.00	9.87	-
+41	Oregon	053	Polk County	2015	12.00	-	12.00	52.78	-	52.78	64.78	-	64.78	50.27	-	50.27	-	37.65	0.38	0.00	38.03	-
+41	Oregon	055	Sherman County	2015	5.95	-	5.95	1.54	-	1.54	7.49	-	7.49	4.33	-	4.33	-	1.95	0.00	0.17	2.12	-
+41	Oregon	057	Tillamook County	2015	0.71	-	0.71	4.36	-	4.36	5.07	-	5.07	3.92	-	3.92	-	4.56	0.00	0.00	4.56	-
+41	Oregon	059	Umatilla County	2015	113.09	-	113.09	179.39	-	179.39	292.48	-	292.48	208.89	-	208.89	-	90.16	16.67	4.45	111.28	-
+41	Oregon	061	Union County	2015	61.22	-	61.22	119.33	-	119.33	180.55	-	180.55	120.60	-	120.60	-	53.40	0.00	21.79	75.19	-
+41	Oregon	063	Wallowa County	2015	8.67	-	8.67	125.30	-	125.30	133.97	-	133.97	85.37	-	85.37	-	30.50	0.00	17.12	47.62	-
+41	Oregon	065	Wasco County	2015	24.11	-	24.11	24.92	-	24.92	49.03	-	49.03	36.07	-	36.07	-	17.72	0.37	0.75	18.84	-
+41	Oregon	067	Washington County	2015	12.89	-	12.89	135.33	-	135.33	148.22	-	148.22	114.78	-	114.78	-	68.81	2.09	0.00	70.90	-
+41	Oregon	069	Wheeler County	2015	1.55	-	1.55	23.91	-	23.91	25.46	-	25.46	12.20	-	12.20	-	2.45	0.00	3.65	6.10	-
+41	Oregon	071	Yamhill County	2015	15.11	-	15.11	97.46	-	97.46	112.57	-	112.57	90.62	-	90.62	-	57.24	2.39	0.00	59.63	-
