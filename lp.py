@@ -160,43 +160,47 @@ Rem_U = [0.0, 1.0, 0.0, 1.0]
 Rem_L = [0.0, 0.0, 1.0, 1.0]
 result = {}
 i = 0
-for p in np.arange(-5, 0, 1):
-    w1 = 10.0 ** p
-    for w2 in np.arange(0.3, 0.61, 0.05):
+for w1 in [10e-6, 10e-5, 10e-4, 10e-3, 10e-2, 10e-1, 0.2, 0.3, 0.4, 0.5]:
+    for w2 in np.arange(0.25, 0.76, 0.05):
         w3 = 1.0 - w1 - w2
         for j in range(len(Rem_U)):
-            temp = min_objective(
-                Q_in * seconds_per_month * cubic_ft_to_taf,
-                (Q_8.mean_va + Q_9.mean_va) * seconds_per_month * cubic_ft_to_taf,
-                K_U * cubic_ft_to_taf,
-                K_L * cubic_ft_to_taf,
-                irr_arr,
-                Rem_U[j],
-                Rem_L[j],
-                P_U,
-                P_L,
-                max_capacity_U,
-                max_capacity_L,
-                cost_electricity,
-                fish_max_flow,
-                C_Rem_U,
-                C_Rem_L,
-                C_Rep_U,
-                C_Rep_L,
-                w1,
-                w2,
-                w3,
-                T
-            )
+            try:
+                temp = min_objective(
+                    Q_in * seconds_per_month * cubic_ft_to_taf,
+                    (Q_8.mean_va + Q_9.mean_va) * seconds_per_month * cubic_ft_to_taf,
+                    K_U * cubic_ft_to_taf,
+                    K_L * cubic_ft_to_taf,
+                    irr_arr,
+                    Rem_U[j],
+                    Rem_L[j],
+                    P_U,
+                    P_L,
+                    max_capacity_U,
+                    max_capacity_L,
+                    cost_electricity,
+                    fish_max_flow,
+                    C_Rem_U,
+                    C_Rem_L,
+                    C_Rep_U,
+                    C_Rep_L,
+                    w1,
+                    w2,
+                    w3,
+                    T
+                )
 
-            name = "w1=" + str(round(w1, 6)) + "_w2=" + str(round(w2, 2)) + "_w3=" + str(round(w3, 2)) + "_RemU=" + str(int(Rem_U[j])) + "_RemL=" + str(int(Rem_L[j]))
-            result[name] = temp
-            temp_df = pd.DataFrame({"S_U": temp["S_U"].value[1:], "S_L": temp["S_L"].value[1:], "R_L": temp["R_L"].value, "R_U": temp["R_U"].value})
-            temp_df.to_csv(name + ".csv")
+                name = "w1=" + str(round(w1, 6)) + "_w2=" + str(round(w2, 2)) + "_w3=" + str(round(w3, 2)) + "_RemU=" + str(int(Rem_U[j])) + "_RemL=" + str(int(Rem_L[j]))
+                result[name] = temp
+                temp_df = pd.DataFrame({"S_U": temp["S_U"].value[1:], "S_L": temp["S_L"].value[1:], "R_L": temp["R_L"].value, "R_U": temp["R_U"].value})
+                temp_df.to_csv(name + ".csv")
+                i += 1
+            except:
+                i += 1
+                print("Failed on iteration " + str(i))
+                print(name)
 
-            i += 1
             if not (i % 10):
-                print("Completed iteration " + str(i) + " of 140")
+                print("Completed iteration " + str(i) + " of 440")
 
 print("Exited loop!")
 
@@ -236,7 +240,7 @@ def simple_cull(inputPoints, dominates):
 def dominates(row, candidateRow):
     return sum([row[x] >= candidateRow[x] for x in range(len(row))]) == len(row)
 
-inputPoints = [[entry["cost"], entry["ecology"], entry["irrigation"]] for entry in result]
+inputPoints = [[entry["cost"], entry["ecology"], entry["irrigation"]] for entry, _ in result.items()]
 paretoPoints, dominatedPoints = simple_cull(inputPoints, dominates)
 
 fig = plt.figure()
