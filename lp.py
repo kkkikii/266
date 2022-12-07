@@ -160,7 +160,7 @@ Rem_U = [0.0, 1.0, 0.0, 1.0]
 Rem_L = [0.0, 0.0, 1.0, 1.0]
 result = {}
 i = 0
-for w1 in [10e-7, 10e-6, 10e-5, 10e-4, 10e-3, 10e-2, 10e-1, 0.2, 0.3, 0.4, 0.5]:
+for w1 in [10e-8, 10e-7, 10e-6, 10e-5, 10e-4, 10e-3, 10e-2, 10e-1, 0.2, 0.3, 0.4, 0.5]:
     for w2 in np.arange(0.0, 1 - w1, 0.05):
         w3 = 1.0 - w1 - w2
         for j in range(len(Rem_U)):
@@ -200,7 +200,7 @@ for w1 in [10e-7, 10e-6, 10e-5, 10e-4, 10e-3, 10e-2, 10e-1, 0.2, 0.3, 0.4, 0.5]:
                 print(name)
 
             if not (i % 10):
-                print("Completed iteration " + str(i) + " of 680")
+                print("Completed iteration " + str(i) + " of 760")
 
 print("Exited loop!")
 
@@ -240,19 +240,20 @@ def simple_cull(inputPoints, dominates):
 def dominates(row, candidateRow):
     return sum([row[x] >= candidateRow[x] for x in range(len(row))]) == len(row)
 
-inputPoints = [[entry["ecology"], entry["irrigation"], entry["cost"]] for _, entry in result.items()]
+inputPoints = [[entry["cost"], entry["irrigation"], entry["ecology"]] for _, entry in result.items()]
 paretoPoints, dominatedPoints = simple_cull(inputPoints, dominates)
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 dp = np.array(list(dominatedPoints))
 pp = np.array(list(paretoPoints))
-ax.scatter(dp[:,0],dp[:,1],dp[:,2])
-ax.scatter(pp[:,0],pp[:,1],pp[:,2],color='red')
-ax.set_xlabel("ecology")
+ax.scatter(dp[:,0],dp[:,1],dp[:,2], label="Dominated solutions")
+ax.scatter(pp[:,0],pp[:,1],pp[:,2], color='red', label="Pareto solutions")
+ax.set_xlabel("cost")
 ax.set_ylabel("irrigation")
-ax.set_zlabel("cost")
+ax.set_zlabel("ecology")
 
+plt.legend()
 triang = mtri.Triangulation(pp[:,0],pp[:,1])
 ax.plot_trisurf(triang,pp[:,2],color='red')
 plt.savefig("3Dfrontier.png")
