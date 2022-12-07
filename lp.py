@@ -160,7 +160,8 @@ Rem_U = [0.0, 1.0, 0.0, 1.0]
 Rem_L = [0.0, 0.0, 1.0, 1.0]
 result = {}
 i = 0
-for w1 in np.arange(0.01, 0.11, 0.01):
+for p in np.arange(-5, 0, 1):
+    w1 = 10.0 ** p
     for w2 in np.arange(0.3, 0.61, 0.05):
         w3 = 1.0 - w1 - w2
         for j in range(len(Rem_U)):
@@ -188,14 +189,14 @@ for w1 in np.arange(0.01, 0.11, 0.01):
                 T
             )
 
-            name = "w1=" + str(w1) + "_w2=" + str(w2) + "_w3=" + str(w3) + "_RemU=" + str(Rem_U[j]) + "_RemL=" + str(Rem_L[j])
+            name = "w1=" + str(round(w1, 6)) + "_w2=" + str(round(w2, 2)) + "_w3=" + str(round(w3, 2)) + "_RemU=" + str(int(Rem_U[j])) + "_RemL=" + str(int(Rem_L[j]))
             result[name] = temp
             temp_df = pd.DataFrame({"S_U": temp["S_U"].value[1:], "S_L": temp["S_L"].value[1:], "R_L": temp["R_L"].value, "R_U": temp["R_U"].value})
             temp_df.to_csv(name + ".csv")
 
             i += 1
             if not (i % 10):
-                print("Completed iteration " + str(i) + " of 280")
+                print("Completed iteration " + str(i) + " of 140")
 
 print("Exited loop!")
 
