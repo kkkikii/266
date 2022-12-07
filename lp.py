@@ -160,7 +160,7 @@ Rem_U = [0.0, 1.0, 0.0, 1.0]
 Rem_L = [0.0, 0.0, 1.0, 1.0]
 result = {}
 i = 0
-for w1 in [10e-8, 10e-7, 10e-6, 10e-5, 10e-4, 10e-3, 10e-2, 10e-1, 0.2, 0.3, 0.4, 0.5]:
+for w1 in [10e-7, 10e-6, 10e-5, 10e-4, 10e-3, 10e-2, 10e-1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.99]:
     for w2 in np.arange(0.0, 1 - w1, 0.05):
         w3 = 1.0 - w1 - w2
         for j in range(len(Rem_U)):
@@ -204,8 +204,8 @@ for w1 in [10e-8, 10e-7, 10e-6, 10e-5, 10e-4, 10e-3, 10e-2, 10e-1, 0.2, 0.3, 0.4
 
 print("Exited loop!")
 
-# plot pareto frontier
-# from https://stackoverflow.com/questions/37000488/how-to-plot-multi-objectives-pareto-frontier-with-deap-in-python
+# plot pareto frontier. Modified from:
+# https://stackoverflow.com/questions/37000488/how-to-plot-multi-objectives-pareto-frontier-with-deap-in-python
 
 def simple_cull(inputPoints, dominates):
     paretoPoints = set()
@@ -215,30 +215,30 @@ def simple_cull(inputPoints, dominates):
         candidateRow = inputPoints[candidateRowNr]
         inputPoints.remove(candidateRow)
         rowNr = 0
-        nonDominated = True
+        nonDominated = False
         while len(inputPoints) != 0 and rowNr < len(inputPoints):
             row = inputPoints[rowNr]
             if dominates(candidateRow, row):
                 # If it is worse on all features remove the row from the array
                 inputPoints.remove(row)
-                dominatedPoints.add(tuple(row))
+                paretoPoints.add(tuple(row))
             elif dominates(row, candidateRow):
-                nonDominated = False
-                dominatedPoints.add(tuple(candidateRow))
+                nonDominated = True
+                paretoPoints.add(tuple(candidateRow))
                 rowNr += 1
             else:
                 rowNr += 1
 
-        if nonDominated:
+        if not (nonDominated):
             # add the non-dominated point to the Pareto frontier
-            paretoPoints.add(tuple(candidateRow))
+            dominatedPoints.add(tuple(candidateRow))
 
         if len(inputPoints) == 0:
             break
     return paretoPoints, dominatedPoints
 
 def dominates(row, candidateRow):
-    return sum([row[x] >= candidateRow[x] for x in range(len(row))]) == len(row)
+    return sum([candidateRow[x] > row[x] for x in range(len(row))]) == len(row)
 
 inputPoints = [[entry["cost"], entry["irrigation"], entry["ecology"]] for _, entry in result.items()]
 paretoPoints, dominatedPoints = simple_cull(inputPoints, dominates)
